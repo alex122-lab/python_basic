@@ -1,4 +1,3 @@
-# TODO здесь писать код
 def my_find(x, y, radius):
     if -radius <= x <= radius and -radius <= y <= radius:
         print('Монетка где-то рядом')
