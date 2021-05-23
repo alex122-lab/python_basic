@@ -18,3 +18,5 @@ count_num = my_count(num)
 print('Сумма цифр: ', sum_num)
 print('Кол-во цифр в числе: ', count_num)
 print('Разность суммы и кол-ва цифр: ', sum_num - count_num)
+
+# зачёт!

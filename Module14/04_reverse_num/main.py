@@ -22,3 +22,5 @@ rev_num2 = my_revers(num2)
 print('Первое число наоборот: ', rev_num1)
 print('Второе число наоборот: ', rev_num2)
 print('Сумма: ', float(rev_num1) + float(rev_num2))
+
+# зачёт!

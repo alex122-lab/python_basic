@@ -3,6 +3,10 @@ def year_num(year1, year2):
         if len(set(str(year))) == 2 and len(set(str(year)[0:2])) != len(set(str(year)[2:])):
             print(year)
 
+
+# TODO, предлагаю пока что решить без len и set, методами из уроков =)
+#  срезы в текущем задании лишние.
+
 year1 = int(input('Ведите первый год: '))
 year2 = int(input('Ведите второй год: '))
 
