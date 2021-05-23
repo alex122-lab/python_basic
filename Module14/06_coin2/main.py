@@ -4,9 +4,12 @@ def my_find(x, y, radius):
     else:
         print('Монетки в области нет')
 
+
 print('Введите координаты монетки')
 x = float(input('X: '))
 y = float(input('Y: '))
 radius = float(input('Введите радиус: '))
 
 my_find(x, y, radius)
+
+# зачёт!

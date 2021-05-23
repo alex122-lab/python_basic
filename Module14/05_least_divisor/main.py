@@ -5,7 +5,8 @@ def my_divide(num):
             min_divide = i
     return min_divide
 
+
 num = int(input('Введите число: '))
 print('Наименьший делитель, отличный от единицы: ', my_divide(num))
 
-
+# зачёт!

@@ -1,4 +1,3 @@
-
 print("Введите первую точку")
 x1 = float(input('X: '))
 y1 = float(input('Y: '))
@@ -18,5 +17,4 @@ else:
     b = y2 - k * x2
     print("y = ", k, " * x + ", b)
 
-
-
+# зачёт!

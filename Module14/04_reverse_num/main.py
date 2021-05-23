@@ -12,12 +12,13 @@ def my_revers(num):
     rev_num = whole_part + '.' + fractional_part
     return rev_num
 
+
 num1 = input('Введите первое число: ')
 num2 = input('Введите второе число: ')
+
+# TODO, предлагаю попробовать сократить количество вызовов наших функций.
+#  Возможно мы сможем создать переменные с возвратом функций и использовать в работе их?
 
 print('Первое число наоборот: ', my_revers(num1))
 print('Второе число наоборот: ', my_revers(num2))
 print('Сумма: ', float(my_revers(num1)) + float(my_revers(num2)))
-
-
-
