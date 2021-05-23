@@ -12,9 +12,9 @@ def my_count(num):
 
 num = input('Введите число: ')
 
-# TODO, предлагаю попробовать сократить количество вызовов наших функций.
-#  Возможно мы сможем создать переменные с возвратом функций и использовать в работе их? =)
+sum_num = my_sum(num)
+count_num = my_count(num)
 
-print('Сумма цифр: ', my_sum(num))
-print('Кол-во цифр в числе: ', my_count(num))
-print('Разность суммы и кол-ва цифр: ', my_sum(num) - my_count(num))
+print('Сумма цифр: ', sum_num)
+print('Кол-во цифр в числе: ', count_num)
+print('Разность суммы и кол-ва цифр: ', sum_num - count_num)

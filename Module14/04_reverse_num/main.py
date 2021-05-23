@@ -16,9 +16,9 @@ def my_revers(num):
 num1 = input('Введите первое число: ')
 num2 = input('Введите второе число: ')
 
-# TODO, предлагаю попробовать сократить количество вызовов наших функций.
-#  Возможно мы сможем создать переменные с возвратом функций и использовать в работе их?
+rev_num1 = my_revers(num1)
+rev_num2 = my_revers(num2)
 
-print('Первое число наоборот: ', my_revers(num1))
-print('Второе число наоборот: ', my_revers(num2))
-print('Сумма: ', float(my_revers(num1)) + float(my_revers(num2)))
+print('Первое число наоборот: ', rev_num1)
+print('Второе число наоборот: ', rev_num2)
+print('Сумма: ', float(rev_num1) + float(rev_num2))
