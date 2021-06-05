@@ -5,6 +5,7 @@ def number(mass):
         else:
             return mass
 
+
 count = int(input('Кол-во контейнеров: '))
 containers = []
 for _ in range(1, count + 1):
@@ -18,3 +19,5 @@ for mass in containers:
         num += 1
 
 print('\nНомер, куда встанет новый контейнер:', num)
+
+# зачёт!

@@ -7,3 +7,5 @@ for i in range(1, count + 1):
         new_cells = list(map(str, cells))
         output = ' '.join(new_cells)
 print('Неподходящие значения:', output)
+
+# зачёт!

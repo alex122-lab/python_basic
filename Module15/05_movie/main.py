@@ -10,3 +10,5 @@ while film != 'стоп':
         my_films.append(film)
 
 print('Список любимых фильмов', my_films)
+
+# зачёт!

@@ -8,5 +8,8 @@ def revers_word(word):
             result = 'Слово является палиндромом'
             return result
 
+
 word = input('Введите слово: ')
 print(revers_word(word))
+
+# зачёт!
