@@ -1,15 +1,14 @@
-def shift(list_start):
-    K = int(input('Сдвиг: '))
-    print('Изначальный список: ', list_start)
-    for i in range(K):
-        list_start.insert(0, list_start.pop(len(list_start) - 1))
-    return print('Сдвинутый список: ', list_start,'\n')
+def shift(nums):
+    K = int(input('\nСдвиг: '))
+    print('Изначальный список:', nums)
+    delta = len(nums)
+    for _ in range(K):
+        for i in range(delta - 1, 0, -1):
+            nums[i], nums[i - 1] = nums[i - 1], nums[i]
+    return print('Отсортированный список:', nums)
 
 list_start = [1, 2, 3, 4, 5]
 shift(list_start)
 list_start = [1, 4, -3, 0, 10]
 shift(list_start)
-
-
-# TODO, предлагаю, пока что решить задание без методов pop и insert, при помощи вложенных циклов и индексов.
 
