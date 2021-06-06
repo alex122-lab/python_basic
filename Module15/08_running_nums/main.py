@@ -7,8 +7,10 @@ def shift(nums):
             nums[i], nums[i - 1] = nums[i - 1], nums[i]
     return print('Отсортированный список:', nums)
 
+
 list_start = [1, 2, 3, 4, 5]
 shift(list_start)
 list_start = [1, 4, -3, 0, 10]
 shift(list_start)
 
+# зачёт!

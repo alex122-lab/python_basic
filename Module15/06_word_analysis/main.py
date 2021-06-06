@@ -9,3 +9,5 @@ for letter in word:
     if count < 2:
         unique += 1
 print('Кол-во уникальных букв: ', unique)
+
+# зачёт!
