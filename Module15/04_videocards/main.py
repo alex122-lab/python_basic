@@ -13,3 +13,5 @@ for i in graphics_card:
 
 print('Старый список видеокарт: ', graphics_card)
 print('Новый список видеокарт: ', new_graphics_card)
+
+# зачёт!
