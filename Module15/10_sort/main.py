@@ -4,7 +4,7 @@ def sort(my_list):
     print('Отсортированный список:', my_list)
 
 
-my_list = [1, 4, -3, 0, 10, -127]
+my_list = [1, 4, -3, 0, 10, -127, -127]
 sort(my_list)
 
 
