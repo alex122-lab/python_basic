@@ -11,3 +11,5 @@ for i_detail in shop:
         cost += i_detail[1]
 print('Кол-во деталей -', count_detail)
 print('Общая стоимость -', cost)
+
+# зачёт!

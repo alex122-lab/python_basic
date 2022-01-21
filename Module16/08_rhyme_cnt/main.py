@@ -12,3 +12,5 @@ for _ in range(count_men - 1):
     list_men.remove(list_men[out])
 
 print('Остался человек под номером', list_men)
+
+# зачёт!
