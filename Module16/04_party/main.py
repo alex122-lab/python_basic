@@ -7,20 +7,17 @@ while come != 'пора спать':
 
     if come == 'пришел' and number <= 5:
         name = input('Имя гостя: ')
-        # TODO, если гость уже есть в списке, то не добавляем. Иначе, задвоим гостей.
-        #  Наличие элемента в списке, стоит проверять при помощи оператора вхождения "in". Пример:
-        #  if 1 in [1, 2, 3]:
-        #      print('Есть!')
-        guests.append(name)
-        print('Привет', name, '!')
+        if not name in guests:
+            guests.append(name)
+            print('Привет', name, '!\n')
     elif come == 'ушел' and number > 0:
         name = input('Имя гостя: ')
-        # TODO, если гостя в списке нет, то не удаляем. Иначе, получим ошибку.
-        guests.remove(name)
+        print('Пока', name, '!\n')
+        if name in guests:
+            guests.remove(name)
     elif come == 'пришел' and number > 5:
-        print('Гостей не может быть больше 6')
-    elif come == 'ушел' and number == 0:
-        print('Гостей нет')
+        print('Прости', name, 'но мест нет')
+print('\nВечеринка закончилась, все легли спать.')
 
 
 
