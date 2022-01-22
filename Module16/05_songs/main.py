@@ -12,15 +12,12 @@ violator_songs = [
 time_songs = 0
 count_sons = int(input('Сколько песен выбрать? '))
 
-# TODO, как реализовать range таким образом, чтобы не производить в цикле вычисления (+1) с переменной цикла?
-#  В таком случае, вычисление произойдёт только 1 раз в range, вместо вычислений каждую итерацию цикла.
-for i in range(count_sons):
-    print('Название', i + 1, ' песни ')
+for i in range(1, count_sons + 1):
+    print('Название', i, ' песни ')
     songs_title = input()
     for i_songs in violator_songs:
         if i_songs[0] == songs_title:
             time_songs += i_songs[1]
-            # TODO, если песня найдена, из вложенного цикла стоит выйти,
-            #  таким образом, сократим количество лишних итераций. Что позволит ускорить код.
+            break
 
 print('Общее время звучания песен: ', time_songs)
