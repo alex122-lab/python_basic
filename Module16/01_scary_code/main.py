@@ -7,9 +7,8 @@ num_5 = list_a.count(5)
 
 # TODO, Предлагаю сократить количество итераций цикла и идти в цикле исходя из количества чисел в списке.
 #  В таком случае, условный оператор будет лишним =)
-for i in list_a:
-    if i == 5:
-        list_a.remove(5)
+for _ in range(num_5):
+    list_a.remove(5)
 list_a.extend(list_c)
 num_3 = list_a.count(3)
 
