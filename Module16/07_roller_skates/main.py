@@ -1,10 +1,9 @@
 list_skates = []
 list_men = []
 count = 0
-# TODO, как реализовать range таким образом, чтобы не производить в цикле вычисления (+1) с переменной цикла?
-#  В таком случае, вычисление произойдёт только 1 раз в range, вместо вычислений каждую итерацию цикла.
+
 count_skates = int(input('Кол-во коньков: '))
-for i in range(count_skates):
+for i in range(1, count_skates + 1):
     print('Размер', i + 1, 'пары: ')
     size = int(input())
     list_skates.append(size)
@@ -21,5 +20,6 @@ for foot in list_men:
             list_men.remove(foot)
             list_skates.remove(skate)
             count += 1
-            # TODO, один человек может забрать только одну пару. Если забрал, то из вложенного цикла выходим.
+            break
+
 print('Наибольшее кол-во людей, которые могут взять ролики:', count)
