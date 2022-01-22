@@ -21,3 +21,5 @@ for i in range(1, count_sons + 1):
             break
 
 print('Общее время звучания песен: ', time_songs)
+
+# зачёт!

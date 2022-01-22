@@ -8,7 +8,7 @@ for i in range(N):
 
 for i in range(N_kredit):
     number += 1
-    print(number,'расписка')
+    print(number, 'расписка')
     to_who = int(input('Кому: '))
     from_who = int(input('От кого: '))
     if to_who != from_who:
@@ -21,4 +21,6 @@ for i in range(N_kredit):
 
 print('\nБаланс друзей:')
 for i in range(N):
-    print(i + 1, ':',list_friends[i])
+    print(i + 1, ':', list_friends[i])
+
+# зачёт!
