@@ -1,4 +1,5 @@
 import random
+
 sticks = int(input('Кол-во палок: '))
 thows = int(input('Кол-во бросков: '))
 list_stick = [1 for _ in range(sticks)]
@@ -13,3 +14,4 @@ for i_num in list_end:
 print('Результат: ', new_list_end)
 # print('Результат: ', *list_end, sep = "")
 
+# зачёт!
