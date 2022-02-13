@@ -33,4 +33,4 @@ for word in list_text:
         new_list_text.append(shift_letters(word, number))
         number += 1
 final_text = ' '.join(new_list_text).replace('(', "'")
-print('\n',final_text.replace('/', '.\n'))
+print('\n', final_text.replace('/', '.\n'))
