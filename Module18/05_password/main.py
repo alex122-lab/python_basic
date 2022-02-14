@@ -2,15 +2,15 @@
 # TODO, переменная alphabet получилась лишней. Чтобы проверить, является ли символ буквой,
 #  стоит использовать метод строк isalpha().
 
-alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-flag = True  # TODO, эту переменную стоит создавать внутри цикла while.
+  # TODO, эту переменную стоит создавать внутри цикла while.
 while True:
+    flag = True
     password = input('Придумайте пароль: ')
     len_p = len(password)
     count_up_letter = 0
     count_d = 0
     for letter in password:
-        if letter not in alphabet:
+        if not letter.isalpha() and not letter.isdigit():
             flag = False
         elif letter.isupper():
             count_up_letter += 1

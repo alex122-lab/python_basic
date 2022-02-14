@@ -5,10 +5,9 @@ else:
     for num in ip_ad:
         if not num.isnumeric():
             print(num, '- не целое число')
-            # TODO, если число не подходит, из цикла стоит выйти при помощи break.
-        elif int(num) >= 255:
+            break
+        elif int(num) > 255:
             print(num, 'превышает 255')
-# TODO, Предлагаю добавить блок else в цикл for и выводить информацию, если IP нам подходит внутри этого цикла.
-#  Если из цикла при помощи break не вышли, отработает блок else цикла for.
-#  Немного подробней, про блоки else циклов for и while, можно почитать тут
-#  https://habr.com/ru/post/148365/
+            break
+    else:
+        print('IP-адрес корректен')
