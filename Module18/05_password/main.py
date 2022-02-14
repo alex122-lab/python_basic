@@ -1,5 +1,9 @@
+
+# TODO, переменная alphabet получилась лишней. Чтобы проверить, является ли символ буквой,
+#  стоит использовать метод строк isalpha().
+
 alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-flag = True
+flag = True  # TODO, эту переменную стоит создавать внутри цикла while.
 while True:
     password = input('Придумайте пароль: ')
     len_p = len(password)

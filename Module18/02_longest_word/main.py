@@ -14,3 +14,4 @@ print('Длина этого слова:', max_len_word)
 # print('Самое длинное слово:', max_word)
 # print('Длина этого слова:', max_len_word)
 
+# зачёт!

@@ -2,6 +2,7 @@ input_text = 'vujgvmCfb tj ufscfu ouib z/vhm jdjuFyqm jt fscfuu uibo jdju/jnqm f
 
 LETTERS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+
 def shift_sym(text, key):
     new_text = ''
     for sym in text:
@@ -12,6 +13,7 @@ def shift_sym(text, key):
             new_text += sym
     return new_text
 
+
 def shift_letters(word, number):
     new_word = ''
     if number < len(word):
@@ -20,6 +22,7 @@ def shift_letters(word, number):
         new_number = number % len(word)
         new_word += word[-new_number::] + word[:-new_number]
     return new_word
+
 
 new_text = shift_sym(input_text, 1)
 list_text = new_text.split()
@@ -34,3 +37,5 @@ for word in list_text:
         number += 1
 final_text = ' '.join(new_list_text).replace('(', "'")
 print('\n', final_text.replace('/', '.\n'))
+
+# зачёт!

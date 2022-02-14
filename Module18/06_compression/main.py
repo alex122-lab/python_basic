@@ -11,3 +11,5 @@ for i in range(len(text)):
         code_text = code_text + sym + str(cnt)
         cnt = 0
 print('Закодированная строка:', code_text)
+
+# зачёт!
