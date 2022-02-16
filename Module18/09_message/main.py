@@ -9,3 +9,5 @@ for i, sym in enumerate(text):
         new_text.insert(start, sym)
 
 print('Новое сообщение:', ''.join(new_text))
+
+# зачёт!

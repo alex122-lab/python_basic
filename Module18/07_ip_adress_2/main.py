@@ -11,3 +11,5 @@ else:
             break
     else:
         print('IP-адрес корректен')
+
+# зачёт!
