@@ -7,9 +7,9 @@ for sym in str_in:
 sym_honest = 0
 sym_count = len(dict_sym)
 for i in dict_sym.values():
-    if i % 2 == 0:
+    if i % 2 != 0:
         sym_honest += 1
-if sym_honest == sym_count or sym_honest == sym_count - 1:
-    print('Можно сделать палиндромом')
-else:
+if sym_honest > 1:
     print('Нельзя сделать палиндромом')
+else:
+    print('Можно сделать палиндромом')
