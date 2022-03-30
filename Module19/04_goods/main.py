@@ -32,3 +32,4 @@ for title, code in goods.items():
         cost_prod += product['quantity'] * product['price']
     print(title, '-', count_quantity, 'шт', ',', 'стоимость', cost_prod, 'руб')
 
+# зачёт!

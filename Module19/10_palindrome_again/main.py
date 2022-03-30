@@ -6,6 +6,9 @@ for sym in str_in:
 
 sym_honest = 0
 sym_count = len(dict_sym)
+
+# TODO, Если переменную цикла используем в коде, её необходимо назвать так, чтобы название отражало суть содержания.
+#  "i" не отражает. В нашем случае, "i" это не Индекс.
 for i in dict_sym.values():
     if i % 2 != 0:
         sym_honest += 1

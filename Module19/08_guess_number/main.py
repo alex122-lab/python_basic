@@ -10,6 +10,9 @@ while True:
                 print(number, end=' ')
         break
     else:
+        # TODO, списки, словари и циклы for в текущем задании лишние.
+        #  Стоит работать с множествами. Небольшая шпаргалка по операциям над множествами:
+        #  https://pythonworld.ru/tipy-dannyx-v-python/mnozhestva-set-i-frozenset.html
         boris_phrase = boris_phrase.split()
         artems_answer = input('Ответ Артёма: ')
         for num in numbers_dict:

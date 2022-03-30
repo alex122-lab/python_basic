@@ -16,6 +16,7 @@ count_sons = int(input('Сколько песен выбрать? '))
 for i in range(1, count_sons + 1):
     print('Название', i, ' песни: ')
     songs_title = input()
+    # TODO, цикл for ниже получился лишним. Наличие ключа в словаре можно проверить при помощи оператора вхождения "in".
     for i_songs in violator_songs:
         if i_songs == songs_title:
             time_songs += violator_songs[i_songs]

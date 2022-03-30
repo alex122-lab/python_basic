@@ -3,6 +3,7 @@ def fun(dct, key, arg):
     dct[key] = dct.setdefault(key, 0) + int(arg)
     return dct
 
+
 d = {}
 for i in range(int(input('Введите кол-во заказов: '))):
     fio, pizza, amount = input(f'{i + 1} заказ: ').rsplit(maxsplit=3)
@@ -45,3 +46,4 @@ for fio_pizza in sorted(orders):
     print('   ', pizza, ':', orders[fio_pizza])
     next_fio = fio
 
+# зачёт!

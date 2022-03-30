@@ -5,6 +5,7 @@ def height(man):
     else:
         return 1 + height(p_tree[man])
 
+
 p_tree = {}
 # n = int(input())
 # for i in range(n - 1):
@@ -42,3 +43,5 @@ for key, value in sorted(heights.items()):
 # print('“Высота” каждого члена семьи: ')
 # for name, count in sorted(heights.items()):
 #     print(name, count)
+
+# зачёт!
