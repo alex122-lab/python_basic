@@ -1,20 +1,23 @@
 number_max = int(input('Введите максимальное число: '))
-numbers_dict = {str(num_dict): 'Нет' for num_dict in range(1, number_max + 1)}
-
-while True:
+number_set = {num for num in range(1, number_max + 1)}
+boris_phrase = ''
+boris_numbers_set = set()
+while len(boris_numbers_set) != 1:
     boris_phrase = input('Нужное число есть среди вот этих чисел: ')
     if boris_phrase == 'Помогите!':
-        print('Артём мог загадать следующие числа: ', end='')
-        for number, word in numbers_dict.items():
-            if word == 'Да':
-                print(number, end=' ')
+        print('Артём мог загадать следующие числа: ',' '.join(map(str, number_set)))
         break
     else:
-        # TODO, списки, словари и циклы for в текущем задании лишние.
-        #  Стоит работать с множествами. Небольшая шпаргалка по операциям над множествами:
-        #  https://pythonworld.ru/tipy-dannyx-v-python/mnozhestva-set-i-frozenset.html
-        boris_phrase = boris_phrase.split()
+        boris_numbers = boris_phrase.split()
+        boris_numbers_set = set(map(int, boris_numbers))
+        print(boris_numbers_set)
         artems_answer = input('Ответ Артёма: ')
-        for num in numbers_dict:
-            if num in boris_phrase:
-                numbers_dict[num] = artems_answer
+        if artems_answer == 'Да':
+            number_set = number_set & boris_numbers_set
+        elif artems_answer == 'Нет':
+            number_set -= boris_numbers_set
+else:
+    if artems_answer == 'Нет':
+        print('Борис проиграл')
+    else:
+        print('Борис выиграл')
