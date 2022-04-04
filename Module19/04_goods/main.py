@@ -24,4 +24,12 @@ store = {
     ],
 }
 
-# TODO здесь писать код
+for title, code in goods.items():
+    count_quantity = 0
+    cost_prod = 0
+    for product in store[code]:
+        count_quantity += product['quantity']
+        cost_prod += product['quantity'] * product['price']
+    print(title, '-', count_quantity, 'шт', ',', 'стоимость', cost_prod, 'руб')
+
+# зачёт!
