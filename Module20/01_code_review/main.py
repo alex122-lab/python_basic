@@ -34,11 +34,12 @@ def f(dict):
 
 pairs = []
 for i in students:
-    pairs += (i, students[i]['age'])
+    list_st = (i, students[i]['age'])
+    pairs.append(list_st)
 
+print('Список пар "ID студента - Возраст":', pairs)
 
 my_lst = f(students)[0]
-l = f(students)[1]
-print(my_lst, l)
-
-# TODO исправить код
+len_sername = f(students)[1]
+print('Полный список интересов всех студентов:', set(my_lst))
+print('Общая длина всех фамилий студентов:', len_sername)
