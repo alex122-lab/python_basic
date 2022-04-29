@@ -4,4 +4,7 @@ players = {
     ("Rob", "Bobbin"): (12, 8, 2)
 }
 
-# TODO здесь писать код
+list_union = []
+for key, value in players.items():
+    list_union.append(key + value)
+print(list_union)
