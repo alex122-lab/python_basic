@@ -12,6 +12,7 @@ def how_are_you(func: Callable) -> Callable:
         func(*args, **kwargs)
     return wrapped_func
 
+
 @how_are_you
 def test():
     """функция для тестирования декоратора"""

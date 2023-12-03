@@ -1,6 +1,7 @@
 from typing import Callable, Any
 import functools
 
+
 def counter(func: Callable) -> Callable:
     """декоратор, считающий и выводящий количество вызовов декорируемой функции."""
 
