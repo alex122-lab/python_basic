@@ -2,6 +2,7 @@ from typing import Callable, Any
 import functools
 from functools import lru_cache
 
+
 def cache_decorator(func: Callable) -> Callable:
     """декоратор, который кэширует (сохраняет для дальнейшего использования)
     результаты вызова функции и, при повторном вызове с теми же аргументами,

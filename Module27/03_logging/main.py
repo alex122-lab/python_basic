@@ -2,6 +2,7 @@ from typing import Callable, Any
 import functools
 import datetime
 
+
 def logging(func: Callable) -> Callable:
     """
     Декоратор, который отвечает за логирование функций.

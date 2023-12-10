@@ -2,7 +2,6 @@ import time
 import functools
 from typing import Callable, Any
 
-
 def how_are_you(func: Callable) -> Callable:
     """декоратор, который перед выполнением декорируемой функции ждёт несколько секунд."""
 
